@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Pages</title>
+  <meta name="description" content="Auto-published event landing pages.">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #f7f7f8; color: #111; }
+    header { padding: 3rem 1rem; text-align: center; background: white; border-bottom: 1px solid #e5e7eb; }
+    main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    code { background: #f3f4f6; padding: .2rem .4rem; border-radius: 6px; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Event Pages</h1>
+    <p>New events will be published at <code>/events/&lt;slug&gt;/index.html</code>.</p>
+  </header>
+  <main>
+    <h2>How this works</h2>
+    <ol>
+      <li>Your Custom GPT collects event details.</li>
+      <li>It posts JSON + HTML to a Make webhook.</li>
+      <li>Make commits the files to this repository under <code>/events/&lt;slug&gt;/index.html</code>.</li>
+      <li>Netlify rebuilds on commit and serves the page.</li>
+    </ol>
+    <p>Try opening a sample (once created): <code>/events/sample-event/</code></p>
+  </main>
+</body>
+</html>
